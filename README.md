@@ -21,20 +21,7 @@ A web application that performs sentiment analysis on movie reviews using machin
 - **Negation Handling**: Advanced text preprocessing that correctly handles negations (e.g., "not bad" → negative)
 - **Model Performance**: 89% accuracy on test data with balanced performance across classes
 
-## Usage
 
-### Web Interface
-
-1. **Main Sentiment Analysis Page** (`http://127.0.0.1:5000`):
-   - Enter any text (movie review, product feedback, etc.) in the text area
-   - Click "Analyze Sentiment" to get instant results
-   - View the predicted sentiment (Positive/Negative) with confidence percentage
-   - See the original text displayed for reference
-
-2. **Analytics Dashboard** (`http://127.0.0.1:5000/analytics`):
-   - View overall dataset statistics (total reviews, positive/negative counts)
-   - Interactive bar chart showing sentiment distribution
-   - Navigate back to the main analysis page
 
 ### What It Provides
 
@@ -45,45 +32,7 @@ A web application that performs sentiment analysis on movie reviews using machin
 - **High Accuracy**: 89% accuracy model trained on large IMDB dataset for reliable predictions
 - **Web-Based Accessibility**: No installation required for end-users, accessible via any web browser
 
-### Example Usage
 
-- **Movie Reviews**: "This film was absolutely fantastic!" → Positive (95% confidence)
-- **Product Feedback**: "The product works well but not great." → Negative (78% confidence)
-- **Social Media**: "Not disappointed with the service." → Positive (82% confidence)
-
-### Prerequisites
-- Python 3.8 or higher
-- Git (optional, for cloning)
-
-### Quick Start
-
-1. **Clone or navigate to the project directory**
-   ```bash
-   cd F:\projects\AI
-   ```
-
-2. **Create a virtual environment**
-   ```powershell
-   python -m venv .venv
-   .venv\Scripts\Activate.ps1
-   ```
-
-3. **Install dependencies**
-   ```powershell
-   pip install --upgrade pip
-   pip install -r requirements.txt
-   ```
-
-4. **Run the application**
-   ```powershell
-   python app.py
-   ```
-
-5. **Open your browser**
-   - Main app: http://127.0.0.1:5000
-   - Analytics: http://127.0.0.1:5000/analytics
-
-## How It Works
 
 ### ML Pipeline Overview
 
@@ -117,24 +66,6 @@ A web application that performs sentiment analysis on movie reviews using machin
 - **Cross-validation F1**: 89.18%
 - Balanced performance across positive and negative classes
 
-## Future Improvements
 
-1. **Model Enhancement**: Implement ensemble methods (Random Forest, XGBoost) or deep learning approaches (LSTM, BERT) for improved accuracy
 
-2. **Real-time Feedback Loop**: Add user feedback mechanism to collect corrections and implement active learning for model retraining
 
-3. **API Development**: Create REST API endpoints for programmatic access to sentiment analysis functionality
-
-4. **Batch Processing**: Support for analyzing multiple reviews at once with CSV upload/download capabilities
-
-5. **Advanced Analytics**: Add more detailed analytics including word clouds, temporal trends, and model performance monitoring
-
-6. **Deployment**: Containerize with Docker and deploy to cloud platforms (Azure App Service, AWS Elastic Beanstalk)
-
-## Contributing
-
-Feel free to submit issues and enhancement requests!
-
-## License
-
-This project is for educational purposes. Please ensure compliance with IMDB dataset usage terms.
